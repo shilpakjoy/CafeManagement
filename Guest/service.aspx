@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Guest/Master2.master" AutoEventWireup="true" CodeFile="service.aspx.cs" Inherits="Guest_service" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Guest/UserMaster.master" AutoEventWireup="true" CodeFile="service.aspx.cs" Inherits="Guest_services" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -75,4 +75,6 @@
 
      
 </asp:Content>
+
+
 

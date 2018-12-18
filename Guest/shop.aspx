@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Guest/Master2.master" AutoEventWireup="true" CodeFile="shop.aspx.cs" Inherits="Guest_shop" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Guest/UserMaster.master" AutoEventWireup="true" CodeFile="shop.aspx.cs" Inherits="Guest_shops" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <title>Toys Shop an Ecommerce Category Bootstrap Responsive Web Template | Home :: w3layouts</title>
@@ -1064,4 +1064,6 @@
       <script src="js/bootstrap.min.js"></script>
       <!-- //bootstrap working--> 
 </asp:Content>
+
+
 
