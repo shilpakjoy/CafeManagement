@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Toys Shop an Ecommerce Category Bootstrap Responsive Web Template | Home :: w3layouts</title>
+    <title>Yummy Cafe</title>
       <!--meta tags -->
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,11 +48,11 @@
                   <ul>
                      <li>
                         <span class="fas fa-phone-volume"></span>
-                        <p>+(000)123 4565 32</p>
+                        <p>+91 8281985538</p>
                      </li>
                      <li>
                         <span class="fas fa-envelope"></span>
-                        <p><a href="mailto:info@example.com">info@example1.com</a></p>
+                        <p><a href="mailto:info@example.com">yummycafecalicut.com</a></p>
                      </li>
                      <li>
                      </li>
@@ -62,7 +62,7 @@
             <div class="container-fluid">
                <div class="hedder-up row">
                   <div class="col-lg-3 col-md-3 logo-head">
-                     <h1><a class="navbar-brand" href="index.aspx">Toys-Shop</a></h1>
+                     <h1><a class="navbar-brand" href="index.aspx">Yummy Cafe</a></h1>
                   </div>
                   <div class="col-lg-5 col-md-6 search-right">
                      <form class="form-inline my-lg-0">
@@ -139,10 +139,6 @@
             </nav>
          </div>
 
-
-   
-
-
          <!-- Slideshow 4 -->
          <div class="slider text-center">
             <div class="callbacks_container">
@@ -151,9 +147,9 @@
                      <div class="slider-img one-img">
                         <div class="container">
                            <div class="slider-info ">
-                              <h5>Pick The Best Toy For <br>Your Kid</h5>
+                              <h5>Enjoy Tasty Coffee  <br>Yummy Cakes</h5>
                               <div class="bottom-info">
-                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor</p>
+                                 <p>Our coffee makes our customers feel happy and warm like perfect rays of sunshine.</p>
                               </div>
                               <div class="outs_more-buttn">
 <%--                                 <a href="#reservationModal">Reservation</a>--%>
@@ -168,12 +164,14 @@
                      <div class="slider-img two-img">
                         <div class="container">
                            <div class="slider-info ">
-                              <h5>Sort Toys And Teddy bears<br>For Kids</h5>
+                              <h5>Enjoy Tasty Coffee  <br>Yummy Cakes</h5>
                               <div class="bottom-info">
-                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor</p>
+                                 <p>Our coffee makes our customers feel happy and warm like perfect rays of sunshine.</p>
                               </div>
                               <div class="outs_more-buttn">
-                                 <a href="#reservationModal">Reservation</a>
+<%--                                 <a href="#reservationModal">Reservation</a>--%>
+                                 <p><a href="https://colorlib.com/" target="_blank" class="btn btn-outline-white btn-lg site-animate" data-toggle="modal" data-target="#reservationModal">Reservation</a></p>
+
                               </div>
                            </div>
                         </div>
@@ -183,12 +181,14 @@
                      <div class="slider-img three-img">
                         <div class="container">
                            <div class="slider-info">
-                              <h5>Best Toys And Dolls<br> For Kids</h5>
+                              <h5>Enjoy Tasty Coffee  <br>Yummy Cakes</h5>
                               <div class="bottom-info">
-                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor</p>
+                                 <p>Our coffee makes our customers feel happy and warm like perfect rays of sunshine.</p>
                               </div>
                               <div class="outs_more-buttn">
-                                 <a href="about.aspx">Read More</a>
+<%--                                 <a href="#reservationModal">Reservation</a>--%>
+                                 <p><a href="https://colorlib.com/" target="_blank" class="btn btn-outline-white btn-lg site-animate" data-toggle="modal" data-target="#reservationModal">Reservation</a></p>
+
                               </div>
                            </div>
                         </div>
@@ -779,7 +779,7 @@
       <footer class="py-lg-4 py-md-3 py-sm-3 py-3 text-center">
          <div class="copy-agile-right">
             <p> 
-               © 2018 Toys-Shop. All Rights Reserved | Design by <a href="http://www.W3Layouts.com" target="_blank">W3Layouts</a>
+               © 2018 Yummy Cafe. All Rights Reserved | Design by <a href="#" target="_blank">Yummy Cafe</a>
             </p>
          </div>
       </footer>
@@ -796,19 +796,22 @@
                </div>
                <div class="modal-body">
                   <div class="register-form">
-                     <form action="#" method="post">
+                     <form action="#" method="post" runat="server">
                         <div class="fields-grid">
                            <div class="styled-input">
-                              <input type="text" placeholder="Your Name" name="Your Name" required="">
+                               <asp:TextBox ID="TextBox1" runat="server" type="text" placeholder="Your Name" name="Your Name" required=""></asp:TextBox>
+<%--                              <input type="text" placeholder="Your Name" name="Your Name" required="">--%>
                            </div>
                            <div class="styled-input">
-                              <input type="email" placeholder="Your Email" name="Your Email" required="">
+                               <asp:TextBox ID="TextBox2" runat="server" type="email" placeholder="Your Email" name="Your Email" required=""></asp:TextBox>
+<%--                              <input type="email" placeholder="Your Email" name="Your Email" required="">--%>
                            </div>
                            <div class="styled-input">
-                              <input type="password" placeholder="password" name="password" required="">
+                               <asp:TextBox ID="TextBox3" runat="server" type="password" placeholder="password" name="password" required=""></asp:TextBox>
+<%--                              <input type="password" placeholder="password" name="password" required="">--%>
                            </div>
                            <button type="submit" class="btn subscrib-btnn">Login</button>
-                                 <p><a href="https://colorlib.com/" target="_blank" class="btn btn-outline-white btn-lg site-animate" data-toggle="modal" data-target="#reservationModal">New Registration?REGISTER HERE</a></p>
+                                 <p><a href="#" target="_blank" class="btn btn-outline-white btn-lg site-animate" data-toggle="modal" data-target="#reservationModal">New Registration?REGISTER HERE</a></p>
                         </div>
                      </form>
                   </div>
