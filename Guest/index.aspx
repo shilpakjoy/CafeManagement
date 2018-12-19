@@ -785,8 +785,13 @@
       </footer>
       <!-- //footer -->
       <!-- Modal 1-->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-         <div class="modal-dialog" role="document">
+      
+
+
+
+
+     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+         <div class="modal-dialog">
             <div class="modal-content">
                <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLabel">Login</h5>
@@ -796,33 +801,21 @@
                </div>
                <div class="modal-body">
                   <div class="register-form">
-                     <form action="#" method="post" runat="server">
-                        <div class="fields-grid">
-                           <div class="styled-input">
-                               <asp:TextBox ID="TextBox1" runat="server" type="text" placeholder="Your Name" name="Your Name" required=""></asp:TextBox>
-<%--                              <input type="text" placeholder="Your Name" name="Your Name" required="">--%>
-                           </div>
-                           <div class="styled-input">
-                               <asp:TextBox ID="TextBox2" runat="server" type="email" placeholder="Your Email" name="Your Email" required=""></asp:TextBox>
-<%--                              <input type="email" placeholder="Your Email" name="Your Email" required="">--%>
-                           </div>
-                           <div class="styled-input">
-                               <asp:TextBox ID="TextBox3" runat="server" type="password" placeholder="password" name="password" required=""></asp:TextBox>
-<%--                              <input type="password" placeholder="password" name="password" required="">--%>
-                           </div>
-                           <button type="submit" class="btn subscrib-btnn">Login</button>
-                                 <p><a href="#" target="_blank" class="btn btn-outline-white btn-lg site-animate" data-toggle="modal" data-target="#reservationModal">New Registration?REGISTER HERE</a></p>
-                        </div>
-                     </form>
-                  </div>
+                      <form runat="server">
+                          <asp:TextBox ID="TextBox1" runat="server" placeholder="Your Name" name="Your Name" required=""></asp:TextBox>
+                          <asp:TextBox ID="TextBox2" runat="server" placeholder="Your Email" name="Your Email" required=""></asp:TextBox>
+                          <asp:TextBox ID="TextBox3" runat="server" placeholder="password" name="password" required=""></asp:TextBox>
+                      <asp:Button ID="Button2" runat="server" Text="Button" class="btn subscrib-btnn" OnClick="Button2_Click"  />
+                          
+                    <div class="modal-footer">
+                        <asp:Button ID="Button1" runat="server" Text="Close" class="btn btn-secondary" data-dismiss="modal"/>
+<%--                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>--%>
                </div>
-               <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-               </div>
+                          </form>
             </div>
          </div>
       </div>
-      <!-- //Modal 1-->
+
       <!--js working-->
       <script src='js/jquery-2.2.3.min.js'></script>
       <!--//js working-->
