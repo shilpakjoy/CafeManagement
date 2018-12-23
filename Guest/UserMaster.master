@@ -105,7 +105,7 @@
                      <a href="about.aspx" class="nav-link">About</a>
                   </li>
                   <li class="nav-item">
-                     <a href="service.aspx" class="nav-link">Service</a>
+                     <a href="menu.aspx" class="nav-link">Menu</a>
                   </li>
                   <li class="nav-item">
                      <a href="shop.aspx" class="nav-link">Shop Now</a>

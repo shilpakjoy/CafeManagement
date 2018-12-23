@@ -147,7 +147,7 @@
                     </td>
                 
                 <td class="auto-style1">
-                    <asp:Button ID="Button1" runat="server" Text="Button" class="btn btn-primary" OnClick="Button1_Click"/></td>
+                    <asp:Button ID="Button1" runat="server" Text="ADD" class="btn btn-primary" OnClick="Button1_Click"/></td>
                 <td class="auto-style1"></td>
             </tr>
             <tr>

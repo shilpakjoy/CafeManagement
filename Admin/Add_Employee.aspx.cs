@@ -14,7 +14,10 @@ public partial class Admin_Add_Employee : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (Session["email"].ToString() == "")
+        {
+            Response.Redirect("../Guest/index.aspx");
+        }
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
