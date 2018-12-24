@@ -36,16 +36,25 @@
             width: 100%;
         }
     </style>
+    <style type="text/css">
+        .auto-style1 {
+            width: 401px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <form runat="server" style="height: 486px; width: 671px; margin-right: 0px">
+    <br />
+        <form runat="server" style="height: 486px; width: 455px; margin-right: 0px">
 
-        <table class="auto-style1">
+        <table style="border: 3px solid #181720">
+<%--    <form runat="server" style="height: 486px; width: 671px; margin-right: 0px">--%>
+
+<%--        <table class="auto-style1">--%>
             <tr>
-                <td>
-                    <asp:Label ID="lbl_type" runat="server" Text="Type"></asp:Label>&nbsp;
+                <td style="color: #000000;">
+                    <asp:Label ID="lbl_type" runat="server" font-size="Large" Text="Type"></asp:Label>&nbsp;
                 </td>
-                <td>
+                <td class="auto-style1">
                     <asp:DropDownList ID="DropDownList1_type" runat="server">
                         <asp:ListItem>Coffee</asp:ListItem>
                         <asp:ListItem>Cake</asp:ListItem>
@@ -54,25 +63,25 @@
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="lbl_name" runat="server" Text="Name"></asp:Label>&nbsp;
+                    <asp:Label ID="lbl_name" runat="server" style="color: #000000" font-size="Large" Text="Name"></asp:Label>&nbsp;
                 </td>
-                <td>
-                    <asp:TextBox ID="txt_name" runat="server"></asp:TextBox>&nbsp;
+                <td class="auto-style1">
+                    <asp:TextBox ID="txt_name" runat="server" class="form-control"></asp:TextBox>&nbsp;
                 </td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="lbl_image" runat="server" Text="Image"></asp:Label>&nbsp;
+                    <asp:Label ID="lbl_image" runat="server" style="color: #000000" font-size="Large" Text="Image"></asp:Label>&nbsp;
                 </td>
-                <td>
+                <td class="auto-style1">
                     <asp:FileUpload ID="FileUpload1" runat="server" />
                     <asp:Image ID="Image1" runat="server"/>        
                     <asp:Button ID="btn_upload" runat="server" Text="UPLOAD" class="btn btn-primary" OnClick="btn_upload_Click1"/>&nbsp;
@@ -80,29 +89,29 @@
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="lbl_price" runat="server" Text="Price"></asp:Label>&nbsp;
+                    <asp:Label ID="lbl_price" runat="server" style="color: #000000" font-size="Large" Text="Price"></asp:Label>&nbsp;
                 </td>
-                <td>
-                    <asp:TextBox ID="txt_price" runat="server"></asp:TextBox>&nbsp;
+                <td class="auto-style1">
+                    <asp:TextBox ID="txt_price" runat="server" class="form-control"></asp:TextBox>&nbsp;
                 </td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>
+                <td class="auto-style1">
                     <asp:Button ID="btn_submit" runat="server" Text="ADD" class="btn btn-primary" OnClick="btn_submit_Click"/>&nbsp;
                 </td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
             </tr>
            
         </table>

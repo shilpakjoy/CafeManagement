@@ -31,6 +31,14 @@
             width: 308px;
         }
     </style>
+    <style type="text/css">
+        .auto-style1 {
+            width: 249px;
+        }
+        .auto-style2 {
+            width: 343px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <form runat="server" style="height: 486px; width: 671px; margin-right: 0px">
@@ -38,21 +46,21 @@
 
         <table class="nav-justified">
             <tr>
-                <td class="auto-style2">First Name&nbsp;</td>
+                <td style="color: #000000" font-size: "Large" class="auto-style2">First Name&nbsp;</td>
                 
                 <td>
                     <asp:TextBox ID="txt_fname" runat="server" class="form-control"></asp:TextBox>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style2">Last Name&nbsp;</td>
+                <td style="color: #000000" font-size: "Large" class="auto-style2" >Last Name&nbsp;</td>
                 
                 <td>
                     <asp:TextBox ID="txt_lname" runat="server" class="form-control"></asp:TextBox>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style2">Address Line&nbsp;</td>
+                <td style="color: #000000" font-size: "Large"  class="auto-style2">Address Line&nbsp;</td>
                 <td>
                     <asp:TextBox ID="txt_address" runat="server" TextMode="MultiLine" class="form-control"></asp:TextBox>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -69,7 +77,7 @@
             </tr>
             
             <tr>
-                <td class="auto-style2">State&nbsp;</td>
+                <td style="color: #000000" font-size: "Large"  class="auto-style2">State&nbsp;</td>
                 <td>
                     <asp:DropDownList ID="DropDownList2_state" runat="server">
                         <asp:ListItem>Select</asp:ListItem>
@@ -81,13 +89,13 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style2">District&nbsp;</td>
+                <td style="color: #000000" font-size: "Large"  class="auto-style2">District&nbsp;</td>
                 <td>
                     <asp:TextBox ID="txt_district" runat="server" class="form-control"></asp:TextBox>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style2">City&nbsp;</td>
+                <td style="color: #000000" font-size: "Large"  class="auto-style2">City&nbsp;</td>
                 <td>
                     <asp:TextBox ID="txt_city" runat="server" class="form-control"></asp:TextBox>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -100,19 +108,19 @@
             </tr>
             
             <tr>
-                <td class="auto-style2">Phone&nbsp;</td>
+                <td style="color: #000000" font-size: "Large"  class="auto-style2">Phone&nbsp;</td>
                 <td class="auto-style1">
                     <asp:TextBox ID="txt_phone" runat="server" class="form-control"></asp:TextBox>&nbsp;</td>
                 <td class="auto-style1"></td>
             </tr>
             <tr>
-                <td class="auto-style2">Email&nbsp;</td>
+                <td style="color: #000000" font-size: "Large"  class="auto-style2">Email&nbsp;</td>
                 <td class="auto-style1">
                     <asp:TextBox ID="txt_email" runat="server" class="form-control"></asp:TextBox>&nbsp;</td>
                 <td class="auto-style1"></td>
             </tr>
             <tr>
-                <td class="auto-style2">Image&nbsp;</td>
+                <td style="color: #000000" font-size: "Large"  class="auto-style2">Image&nbsp;</td>
                 <td>
                     <asp:FileUpload ID="FileUpload1" runat="server" />
  
@@ -123,7 +131,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style2">Type</td>
+                <td style="color: #000000" font-size: "Large"  class="auto-style2">Type</td>
                 <td>
                     <asp:DropDownList ID="DropDownList1_type" runat="server">
                         <asp:ListItem>Select</asp:ListItem>
