@@ -41,6 +41,11 @@
             width: 401px;
         }
     </style>
+    <style type="text/css">
+        .auto-style1 {
+            height: 60px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <br />
@@ -78,7 +83,7 @@
                 <td class="auto-style1">&nbsp;</td>
             </tr>
             <tr>
-                <td>
+                <td class="auto-style1">
                     <asp:Label ID="lbl_image" runat="server" style="color: #000000" font-size="Large" Text="Image"></asp:Label>&nbsp;
                 </td>
                 <td class="auto-style1">

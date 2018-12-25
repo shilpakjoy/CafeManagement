@@ -230,7 +230,8 @@
                 <form action="#" method="post">
                   <div class="row">
                     <div class="col-md-6 form-group">
-                      <label for="m_fname">First Name</label>
+                        <asp:Label ID="Label1" runat="server" Text="First Name"></asp:Label>
+<%--                      <label for="m_fname">First Name</label>--%>
                       <input type="text" class="form-control" id="m_fname">
                     </div>
                     <div class="col-md-6 form-group">
@@ -240,13 +241,15 @@
                   </div>
                   <div class="row">
                     <div class="col-md-12 form-group">
-                      <label for="m_email">Email</label>
+                        <asp:Label ID="Label2" runat="server" Text="Email"></asp:Label>
+<%--                      <label for="m_email">Email</label>--%>
                       <input type="email" class="form-control" id="m_email">
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-md-6 form-group">
-                      <label for="m_people">How Many People</label>
+                        <asp:Label ID="Label3" runat="server" Text="How Many People"></asp:Label>
+<%--                      <label for="m_people">How Many People</label>--%>
                       <select name="" id="m_people" class="form-control">
                         <option value="1">1 People</option>
                         <option value="2">2 People</option>
@@ -255,6 +258,7 @@
                       </select>
                     </div>
                     <div class="col-md-6 form-group">
+                        <asp:Label ID="Label4" runat="server" Text="Phone"></asp:Label>
                       <label for="m_phone">Phone</label>
                       <input type="text" class="form-control" id="m_phone">
                     </div>
