@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Admin_View_Employee : System.Web.UI.Page
+public partial class System_Operator_Add_pastry : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {

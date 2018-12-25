@@ -23,7 +23,7 @@ public partial class System_Operator_Add_Menu : System.Web.UI.Page
     {
         Class1 obj = new Class1();
         obj.getconnect();
-        String filename = Path.Combine(Server.MapPath("~/Images/"), FileUpload1.FileName);
+        String filename = Path.Combine(Server.MapPath("~/Images/menu/"), FileUpload1.FileName);
         SqlCommand cmd1 = new SqlCommand("spmenu", obj.con);
         cmd1.CommandType = CommandType.StoredProcedure;
         cmd1.Parameters.Add("@flag", 0);
@@ -49,13 +49,13 @@ public partial class System_Operator_Add_Menu : System.Web.UI.Page
         if (FileUpload1.HasFile)
         {
 
-            String filename = Path.Combine(Server.MapPath("~/Images/"), FileUpload1.FileName);
+            String filename = Path.Combine(Server.MapPath("~/Images/menu/"), FileUpload1.FileName);
             String strExtension = Path.GetExtension(FileUpload1.FileName);
             if (strExtension == ".jpg" || strExtension == ".tmp" || strExtension == ".gif")
             {
 
                 FileUpload1.SaveAs(filename);
-                Image1.ImageUrl = "~/Images/" + FileUpload1.FileName;
+                Image1.ImageUrl = "~/Images/menu/" + FileUpload1.FileName;
                 ViewState["filepath"] = Image1.ImageUrl;
             }
             else

@@ -315,8 +315,11 @@
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
             <ul class="sub">
-              <li><a class="" href="Add_Menu.aspx">Add Menu</a></li>
-              <li><a class="" href="ViewMenu.aspx">View</a></li>
+              <li><a class="" href="Add_Menu.aspx">Add Item</a></li>
+                <ul class="sub-menu"><a class="" href="View_coffee.aspx">View Coffee</a></ul>
+<%--              <li><a class="" href="ViewMenu.aspx">View</a></li>--%>
+                <ul class="sub-menu"><a class="" href="View_pastry.aspx">View Pastry</a></ul>
+
             </ul>
           </li>
           <li class="sub-menu">
@@ -387,9 +390,9 @@
             <ul class="short_ls">
                <li>
                   <a href="index.aspx">Home</a>
-                  <span>/ /</span>
+                  <span>/ /</span>Menu
                </li>
-               <li>Service</li>
+               <li></li>
             </ul>
          </div>
       </div>
