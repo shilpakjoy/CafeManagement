@@ -317,8 +317,8 @@
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
             <ul class="sub">
-              <li><a class="" href="Add_Employee.aspx">Add Employee</a></li>
-              <li><a class="" href="form_validation.html">View</a></li>
+              <li><a class="" href="Add_Employee.aspx">Add Employees</a></li>
+              <li><a class="" href="View_Employee.aspx">View Employees</a></li>
             </ul>
           </li>
           <li class="sub-menu">
@@ -417,10 +417,10 @@
 
       </section>
       <div class="text-right">
-        <div class="credits">
+        <%--<div class="credits">
           
           Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
+        </div>--%>
       </div>
     </section>
     <!--main content end-->

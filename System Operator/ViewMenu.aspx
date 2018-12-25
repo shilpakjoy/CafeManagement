@@ -7,11 +7,11 @@
         <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1" AutoGenerateColumns="False" BackColor="#FFFFCC" DataKeyNames="menu_id">
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
-                <asp:BoundField DataField="menu_id" HeaderText="Menu_id" ReadOnly="True" SortExpression="menu_id" />
-                <asp:BoundField DataField="type" HeaderText="Type" SortExpression="type" />
-                <asp:BoundField DataField="name" HeaderText="Name" SortExpression="name" />
-                <asp:BoundField DataField="image" HeaderText="Image" SortExpression="image" />
-                <asp:BoundField DataField="price" HeaderText="Price" SortExpression="price" />
+                <asp:BoundField DataField="menu_id" HeaderText="Menu_id" ReadOnly="True" SortExpression="menu_id" HeaderStyle-ForeColor="White" />
+                <asp:BoundField DataField="type" HeaderText="Type" SortExpression="type" HeaderStyle-ForeColor="White" />
+                <asp:BoundField DataField="name" HeaderText="Name" SortExpression="name" HeaderStyle-ForeColor="White" />
+                <asp:BoundField DataField="image" HeaderText="Image" SortExpression="image" HeaderStyle-ForeColor="White" />
+                <asp:BoundField DataField="price" HeaderText="Price" SortExpression="price" HeaderStyle-ForeColor="White" />
                 <asp:TemplateField>
                     <ItemTemplate>
                         <asp:Image ID="Image2" runat="server" ImageUrl='<%# Eval("image") %>' />
