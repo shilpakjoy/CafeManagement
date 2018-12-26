@@ -110,6 +110,9 @@
                   <li class="nav-item">
                      <a href="shop.aspx" class="nav-link">Shop Now</a>
                   </li>
+                   <li class="nav-item">
+                        <a href="Table_Reservation.aspx" class="nav-link">Table Reservation</a>
+                     </li>
                   <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      Pages
@@ -226,21 +229,17 @@
                </div>
                <div class="modal-body">
                   <div class="register-form">
-                     <form action="#" method="post">
-                        <div class="fields-grid">
-                           <div class="styled-input">
-                              <input type="text" placeholder="Your Name" name="Your Name" required="">
-                           </div>
-                           <div class="styled-input">
-                              <input type="email" placeholder="Your Email" name="Your Email" required="">
-                           </div>
-                           <div class="styled-input">
-                              <input type="password" placeholder="password" name="password" required="">
-                           </div>
-                           <button type="submit" class="btn subscrib-btnn">Login</button>
-                        </div>
-                     </form>
-                  </div>
+                      <form runat="server">
+<%--                          <asp:TextBox ID="txt_fname" runat="server" placeholder="Your Name" name="Your Name" required=""></asp:TextBox>--%>
+                          <asp:TextBox ID="txt_email" runat="server" placeholder="Your Email" name="Your Email" required=""></asp:TextBox>
+                          <asp:TextBox ID="txt_pswd" runat="server" placeholder="password" name="password" required=""></asp:TextBox>
+                      <asp:Button ID="Button2" runat="server" Text="Button" class="btn subscrib-btnn" OnClick="Button2_Click"  />
+                        New User?<a href="User_Registration.aspx" >Register Here</a><br />                    
+                        <div class="modal-footer">
+                        <asp:Button ID="Button1" runat="server" Text="Close" class="btn btn-secondary" data-dismiss="modal"/>
+<%--                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>--%>
+               </div>
+                          </form>>
                </div>
                <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
