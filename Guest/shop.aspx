@@ -189,17 +189,11 @@
 							<!-- //price range -->
                   <!--preference -->
                    
-                  <div 
-                      
-                      <form runat="server">
+                     <div> 
                      <h3 class="agileits-sear-head">Choose Cakes</h3>
                      <ul>
                         <li>
-                          <asp:DropDownList ID="DropDownList1" runat="server" BackColor="#CCCCCC" Font-Names="Aparajita" Font-Size="Large" ForeColor="Black">
-                              <asp:ListItem>Black Forest</asp:ListItem>
-                              <asp:ListItem>White Forest</asp:ListItem>
-                              <asp:ListItem>Red Velvet</asp:ListItem>
-                            </asp:DropDownList>
+                         
                         </li>
                         <%--<li>
                            <input type="checkbox" class="checked">
@@ -214,10 +208,8 @@
                            <span class="span">Remot</span>
                         </li>--%>
                      </ul>
-                      </form>
                   </div>
-
-         
+       
 
                   <!-- // preference -->
                   <!-- discounts -->
@@ -1063,6 +1055,7 @@
       <!--bootstrap working-->
       <script src="js/bootstrap.min.js"></script>
       <!-- //bootstrap working--> 
+
 </asp:Content>
 
 
