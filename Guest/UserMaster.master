@@ -39,6 +39,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
+                          <form runat="server">
 
 <div class="header-outs" id="home">
       <div class="header-bar">
@@ -104,37 +105,36 @@
                   <li class="nav-item">
                      <a href="about.aspx" class="nav-link">About</a>
                   </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <a class="nav-link" href="menu_coffee.aspx">Coffee</a>
+                           <a class="nav-link " href="menu_pastry.aspx">Pastry</a>
+                        </div>
+                     </li>
+                 
                   <li class="nav-item">
-                     <a href="menu.aspx" class="nav-link">Menu</a>
-                  </li>
-                  <li class="nav-item">
-                     <a href="shop.aspx" class="nav-link">Shop Now</a>
+                     <a href="shop.aspx" class="nav-link">Shop Cakes</a>
                   </li>
                    <li class="nav-item">
                         <a href="Table_Reservation.aspx" class="nav-link">Table Reservation</a>
                      </li>
-                  <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     Pages
-                     </a>
-                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="nav-link" href="icon.html">404 Page</a>
-                        <a class="nav-link " href="typography.html">Typography</a>
-                     </div>
-                  </li>
+                  
                   <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     Product
+                     Cakes
                      </a>
                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="nav-link" href="product.html">Kids Toys</a>
-                        <a class="nav-link " href="product.html">Dolls</a>
-                        <a class="nav-link " href="product.html">Key Toys</a>
-                        <a class="nav-link " href="product.html">Boys Toys</a>
+                        <a class="nav-link" href="menu.aspx#category='STRAWBERRY'">Black Forest</a>
+                        <a class="nav-link " href="menu.aspx#category='CHOCOLATE'">Dolls</a>
+                         <a class="nav-link" href="shopping.aspx">NORMAL FLAVORED CAKE</a>
+                           <a class="nav-link " href="product.html">PHOTO PRINTED CAKES</a>
                      </div>
                   </li>
                   <li class="nav-item">
-                     <a href="contact.html" class="nav-link">Contact</a>
+                     <a href="shopping.aspx"class="nav-link">Contact</a>
                   </li>
                </ul>
             </div>
@@ -229,7 +229,9 @@
                </div>
                <div class="modal-body">
                   <div class="register-form">
-                      <form runat="server">
+
+
+
 <%--                          <asp:TextBox ID="txt_fname" runat="server" placeholder="Your Name" name="Your Name" required=""></asp:TextBox>--%>
                           <asp:TextBox ID="txt_email" runat="server" placeholder="Your Email" name="Your Email" required=""></asp:TextBox>
                           <asp:TextBox ID="txt_pswd" runat="server" placeholder="password" name="password" required=""></asp:TextBox>
@@ -239,7 +241,10 @@
                         <asp:Button ID="Button1" runat="server" Text="Close" class="btn btn-secondary" data-dismiss="modal"/>
 <%--                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>--%>
                </div>
-                          </form>>
+
+
+
+
                </div>
                <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -319,5 +324,7 @@
         </asp:ContentPlaceHolder>
     </div>
     </form>--%>
+                                    </form>
+
 </body>
 </html>

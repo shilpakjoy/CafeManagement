@@ -39,7 +39,7 @@ public partial class Guest_Table_Reservation : System.Web.UI.Page
         cmd1.Parameters.Add("@people", DropDownList1_people.SelectedItem.Text);
         cmd1.Parameters.Add("@phone", txt_phone.Text);
         cmd1.Parameters.Add("@date", txt_date.Text);
-        cmd1.Parameters.Add("@time", txt_phone.Text);
+        cmd1.Parameters.Add("@time", txt_time.Text);
         cmd1.Parameters.Add("@message", txt_msg.Text);
         cmd1.Parameters.Add("@status", "waiting");
         cmd.ExecuteNonQuery();
