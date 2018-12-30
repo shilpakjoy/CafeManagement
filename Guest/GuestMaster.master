@@ -78,9 +78,9 @@
                   <div class="col-lg-4 col-md-3 right-side-cart">
                      <div class="cart-icons">
                         <ul>
-                           <li>
+                           <%--<li>
                               <span class="far fa-heart"></span>
-                           </li>
+                           </li>--%>
                            <li>
                               <button type="button" data-toggle="modal" data-target="#exampleModal"> <span class="far fa-user"></span></button>
                            </li>

@@ -539,7 +539,7 @@
                         normalizeFunction: 'polynomial'
                     }]
                 },
-                backgroundColor: '#eef3f7',
+                background------------------------------------------------------------------------------------------------------------------------------
                 onLabelShow: function (e, el, code) {
                     el.html(el.html() + ' (GDP - ' + gdpData[code] + ')');
                 }
