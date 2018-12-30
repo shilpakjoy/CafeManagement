@@ -59,4 +59,10 @@ public partial class Guest_Table_Reservation : System.Web.UI.Page
         //txtrate.Text = "";
 
     }
+    
+    protected void Button2_Click1(object sender, EventArgs e)
+    {
+        Response.Redirect("../Guest/index.aspx");
+
+    }
 }

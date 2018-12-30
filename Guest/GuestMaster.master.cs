@@ -54,4 +54,10 @@ public partial class Guest_GuestMaster : System.Web.UI.MasterPage
 
         }
     }
+        protected void Button3_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("../Guest/index.aspx");
+
+    }
+
 }

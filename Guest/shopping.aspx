@@ -19,7 +19,7 @@
 						<div class="col-md-6 contact_left_grid" data-aos="fade-right">
                             
                            
-                            <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" RepeatColumns="3">
+                            <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" RepeatColumns="3" Visible="False">
                                 <ItemTemplate>
                                     name:
                                     <asp:Label ID="nameLabel" runat="server" Text='<%# Eval("name") %>' />
@@ -34,7 +34,6 @@
                                     price:
                                     <asp:Label ID="priceLabel" runat="server" Text='<%# Eval("price") %>' />
 <br />
-                                    <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Button" />
                                     <br />
                                 </ItemTemplate>
                             </asp:DataList>

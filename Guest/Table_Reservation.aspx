@@ -49,50 +49,46 @@
           <div class="modal-body">
             <div class="row">
               <div class="col-lg-12">
-<%--                <div class="bg-image" style="background-image: url(images/reservation_1.jpg);"></div>--%>
               </div>
               <div class="col-lg-12 p-5">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <small>CLOSE </small><span aria-hidden="true">&times;</span>
-                </button>
-                <h1 class="mb-4">Reserve A Table</h1>  
-                  <form id="form1" runat="server">
+                                   <form id="form1" runat="server">
+
+                <h1 class="mb-4">Reserve A Table</h1> <asp:Button ID="Button2" runat="server" Text="Back" OnClick="Button2_Click1" /> 
+                      
                   <div class="row">
                     <div class="col-md-6 form-group">
                         <asp:Label ID="lbl_fname" runat="server" Text="First Name"></asp:Label>
-                        <asp:TextBox ID="txt_fname" runat="server" type="text" class="form-control"></asp:TextBox>
-                      <%--<label for="m_fname">First Name</label>
-                      <input type="text" class="form-control" id="m_fname">--%>
+                        <asp:TextBox ID="txt_fname" runat="server" type="text" class="form-control" ></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*" ControlToValidate="txt_fname" ForeColor="Red"></asp:RequiredFieldValidator>
+                    
                     </div>
                     <div class="col-md-6 form-group">
                         <asp:Label ID="lbl_lname" runat="server" Text="Last Name"></asp:Label>
-                        <asp:TextBox ID="txt_lname" runat="server" type="text" class="form-control"></asp:TextBox>
-                      <%--<label for="m_lname">Last Name</label>
-                      <input type="text" class="form-control" id="m_lname">--%>
+                        <asp:TextBox ID="txt_lname" runat="server" type="text" class="form-control" ></asp:TextBox>
+                       <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*" ControlToValidate="txt_lname" ForeColor="Red"></asp:RequiredFieldValidator>
+
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-md-12 form-group">
                         <asp:Label ID="lbl_email" runat="server" Text="Email"></asp:Label>
-                        <asp:TextBox ID="txt_email" runat="server" type="email" class="form-control"></asp:TextBox>
-                      <%--<label for="m_email">Email</label>
-                      <input type="email" class="form-control" id="m_email">--%>
+                        <asp:TextBox ID="txt_email" runat="server" type="email" class="form-control" ></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*" ControlToValidate="txt_email" ForeColor="Red"></asp:RequiredFieldValidator>
+
                     </div>
                    </div>
                    <div class="row">
                       <div class="col-md-6 form-group">
                         <asp:Label ID="lbl_pswd" runat="server" Text="Password"></asp:Label>
-                        <asp:TextBox ID="txt_pswd" runat="server" type="text" class="form-control"></asp:TextBox>
+                        <asp:TextBox ID="txt_pswd" runat="server" type="text" class="form-control"></asp:TextBox>  
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*" ControlToValidate="txt_pswd" ForeColor="Red"></asp:RequiredFieldValidator>
 
-                      <%--<label for="m_lname">Last Name</label>
-                      <input type="text" class="form-control" id="m_lname">--%>
                       </div>
                         <div class="col-md-6 form-group">
                         <asp:Label ID="lbl_confpswd" runat="server" Text=" Confirm Password"></asp:Label>
                         <asp:TextBox ID="txt_confpswd" runat="server" type="text" class="form-control"></asp:TextBox>
-                            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txt_pswd" ControlToValidate="txt_confpswd" ErrorMessage="CompareValidator"></asp:CompareValidator>
-                      <%--<label for="m_lname">Last Name</label>
-                      <input type="text" class="form-control" id="m_lname">--%>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="*" ControlToValidate="txt_confpswd" ForeColor="Red"></asp:RequiredFieldValidator>
+                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txt_pswd" ControlToValidate="txt_confpswd" ErrorMessage="CompareValidator" ForeColor="Red"></asp:CompareValidator>
                       </div>
                   </div>
                   <div class="row">
@@ -104,50 +100,42 @@
                             <asp:ListItem>3 People</asp:ListItem>
                             <asp:ListItem>4+ People</asp:ListItem>
                         </asp:DropDownList>
-                      <%--<label for="m_people">How Many People</label>
-                      <select name="" id="m_people" class="form-control">
-                        <option value="1">1 People</option>
-                        <option value="2">2 People</option>
-                        <option value="3">3 People</option>
-                        <option value="4+">4+ People</option>
-                      </select>--%>
                     </div>
                     <div class="col-md-6 form-group">
                         <asp:Label ID="lbl_phone" runat="server" Text="Phone"></asp:Label>
-                        <asp:TextBox ID="txt_phone" runat="server" type="text" class="form-control"></asp:TextBox>
-                      <%--<label for="m_phone">Phone</label>
-                      <input type="text" class="form-control" id="m_phone">--%>
+                        <asp:TextBox ID="txt_phone" runat="server" type="text" class="form-control" ></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="*" ControlToValidate="txt_phone"  ForeColor="Red"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Enter valid number" ControlToValidate="txt_phone" ValidationExpression="\d{10}"  ForeColor="Red"></asp:RegularExpressionValidator>
                     </div>
                   </div>
 
                   <div class="row">
                     <div class="col-md-6 form-group">
                         <asp:Label ID="lbl_date" runat="server" Text="Date"></asp:Label>
-                        <asp:TextBox ID="txt_date" runat="server" type="text" class="form-control" TextMode="Date"></asp:TextBox>
-                      <%--<label for="m_date">Date</label>
-                      <input type="text" class="form-control" id="m_date">--%>
+                        <asp:TextBox ID="txt_date" runat="server" type="text" class="form-control" TextMode="Date" ></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="*" ControlToValidate="txt_date"  ForeColor="Red"></asp:RequiredFieldValidator>
+
                     </div>
                     <div class="col-md-6 form-group">
                         <asp:Label ID="lbl_time" runat="server" Text="Time"></asp:Label>
-                        <asp:TextBox ID="txt_time" runat="server" type="text" class="form-control"></asp:TextBox>
-                     <%-- <label for="m_time">Time</label>
-                      <input type="text" class="form-control" id="m_time">--%>
+                        <asp:TextBox ID="txt_time" runat="server" type="text" class="form-control" ></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="*" ControlToValidate="txt_time"  ForeColor="Red"></asp:RequiredFieldValidator>
+
                     </div>
                   </div>
 
                   <div class="row">
                     <div class="col-md-12 form-group">
                         <asp:Label ID="lbl_msg" runat="server" Text="Message"></asp:Label>
-                        <asp:TextBox ID="txt_msg" runat="server" class="form-control" TextMode="MultiLine"></asp:TextBox>
-                      <%--<label for="m_message">Message</label>
-                      <textarea class="form-control" id="m_message" cols="30" rows="7"></textarea>--%>
+                        <asp:TextBox ID="txt_msg" runat="server" class="form-control" TextMode="MultiLine" ></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ErrorMessage="*" ControlToValidate="txt_msg"  ForeColor="Red"></asp:RequiredFieldValidator>
+
                     </div>
                   </div>
                   
                   <div class="row">
                     <div class="col-md-12 form-group">
                         <asp:Button ID="Button1" runat="server" class="btn btn-primary btn-lg btn-block" Text="Reserve Now" OnClick="Button1_Click" />
-<%--                      <input type="submit" class="btn btn-primary btn-lg btn-block" value="Reserve Now">--%>
                     </div>
                   </div>
 
@@ -158,7 +146,6 @@
           </div>
         </div>
       </div>
-    </div>
          <script src="js/bootstrap.min.js"></script>
 
 </body>
