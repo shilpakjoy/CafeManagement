@@ -557,6 +557,12 @@ alalalodal .close {
   cursor: pointer;
 }
 
+#reservationModal .close {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  cursor: pointer;
+}
 #reservationModal .close:active, #reservationModal .close:focus {
   outline: none !important;
 }

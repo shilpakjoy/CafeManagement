@@ -1,10 +1,10 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Usermaster.master.cs" Inherits="User_Usermaster" %>
 
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-   <head runat="server">
    <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
@@ -12,7 +12,7 @@
   <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
   <link rel="shortcut icon" href="img/favicon.png">
 
-  <title>Admin</title>
+  <title>User</title>
 
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -41,8 +41,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-
-<section id="container" class="">
+    <section id="container" class="">
 
 
     <header class="header dark-bg">
@@ -51,7 +50,7 @@
       </div>
 
       <!--logo start-->
-      <a href="index.aspx" class="logo"> <span class="lite">Admin</span></a>
+      <a href="index.aspx" class="logo"> <span class="lite">User</span></a>
       <!--logo end-->
 
       <div class="nav search-row" id="top_menu">
@@ -313,39 +312,56 @@
           <li class="sub-menu">
             <a href="javascript:;" class="">
                           <i class="icon_document_alt"></i>
-                          <span>Employee</span>
+                          <span>Menu</span>
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
             <ul class="sub">
-              <li><a class="" href="Add_Employee.aspx">Add Employees</a></li>
-              <li><a class="" href="View_Employee.aspx">View Employees</a></li>
+              <li><a class="" href="Add_Menu.aspx">Add Item</a></li>
+                <ul class="sub-menu"><a class="" href="View_coffee.aspx">View Coffee</a></ul>
+<%--              <li><a class="" href="ViewMenu.aspx">View</a></li>--%>
+                <ul class="sub-menu"><a class="" href="View_pastry.aspx">View Pastry</a></ul>
+
             </ul>
           </li>
           <li class="sub-menu">
             <a href="javascript:;" class="">
                           <i class="icon_desktop"></i>
-                          <span>Menu</span>
+                          <span>Table Reservation</span>
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
             <ul class="sub">
-              <li><a class="" href="view_coffee.aspx">Coffee</a></li>
-              <li><a class="" href="view_pastry.aspx">Pastry</a></li>
-<%--              <li><a class="" href="grids.html">Grids</a></li>--%>
+              <li><a class="" href="View_table_reservation.aspx">View reservation</a></li>
+              <li><a class="" href="tbl_rsrv_approvedUsers.aspx">Approved User</a></li>
             </ul>
           </li>
-          <li>
+<li class="sub-menu">
+            <a href="javascript:;" class="">
+                          <i class="icon_desktop"></i>
+                          <span>Cake</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+            <ul class="sub">
+              <li><a class="" href="Add_cakes.aspx">Add Cake</a></li>
+              <li><a class="" href="View_Cake.aspx">View Cake</a></li>
+            </ul>
+          </li>
+            
+          <%--<li>
             <a class="" href="widgets.html">
                           <i class="icon_genius"></i>
                           <span>Widgets</span>
                       </a>
-          </li>
-          <li>
-            <a class="" href="chart-chartjs.html">
-                          <i class="icon_piechart"></i>
-                          <span>Charts</span>
-
+          </li>--%>
+          <li class="sub-menu">
+            <a href="javascript:;" class="">
+                          <i class="icon_desktop"></i>
+                          <span>Category</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
-
+            <ul class="sub">
+              <li><a class="" href="Add_Category.aspx">Add Category</a></li>
+              <li><a class="" href="View_Cake.aspx">View Category</a></li>
+            </ul>
           </li>
 
           <li class="sub-menu">
@@ -389,9 +405,9 @@
             <ul class="short_ls">
                <li>
                   <a href="index.aspx">Home</a>
-                  <span>/ /</span>
+                  <span>/ /</span>Menu
                </li>
-               <li>Service</li>
+               <li></li>
             </ul>
          </div>
       </div>
@@ -400,7 +416,25 @@
           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 
 
+<div>
 
+</div><div>
+
+</div><div>
+
+</div><div>
+
+</div><div>
+
+</div><div>
+
+</div><div>
+
+</div><div>
+
+</div><div>
+
+</div>
 
 <div>
 
@@ -408,7 +442,7 @@
 
 
 
-               <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+               <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
 
@@ -417,7 +451,7 @@
 
       </section>
       <div class="text-right">
-        <%--<div class="credits">
+        <<%--div class="credits">
           
           Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>--%>
@@ -519,25 +553,5 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<%--    <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
-    </form>--%>
 </body>
 </html>

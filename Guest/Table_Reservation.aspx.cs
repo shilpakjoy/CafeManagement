@@ -51,12 +51,17 @@ public partial class Guest_Table_Reservation : System.Web.UI.Page
     }
     protected void clear()
     {
-        //txtroomno.Text = "";
-        //RadioButtonList1.ClearSelection();
-        //RadioButtonList2.ClearSelection();
-        //Image1.ImageUrl = "";
-        //txtdesc.Text = "";
-        //txtrate.Text = "";
+        txt_fname.Text = "";
+        txt_lname.Text = "";
+        txt_email.Text = "";
+        txt_pswd.Text = "";
+        DropDownList1_people.ClearSelection();
+        txt_phone.Text = "";
+        txt_date.Text = "";
+        txt_time.Text = "";
+        txt_msg.Text = "";
+
+        
 
     }
     

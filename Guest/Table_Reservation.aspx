@@ -74,19 +74,23 @@
                         <asp:Label ID="lbl_email" runat="server" Text="Email"></asp:Label>
                         <asp:TextBox ID="txt_email" runat="server" type="email" class="form-control" ></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*" ControlToValidate="txt_email" ForeColor="Red"></asp:RequiredFieldValidator>
-
+<%--                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ErrorMessage="Email format" ForeColor="Red" ControlToValidate="txt_email" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>--%>
                     </div>
                    </div>
                    <div class="row">
                       <div class="col-md-6 form-group">
                         <asp:Label ID="lbl_pswd" runat="server" Text="Password"></asp:Label>
-                        <asp:TextBox ID="txt_pswd" runat="server" type="text" class="form-control"></asp:TextBox>  
+                        <asp:TextBox ID="txt_pswd" runat="server" type="password" class="form-control"></asp:TextBox>  
+                          <cc1:PasswordStrength ID="txt_pswd_PasswordStrength" runat="server" Enabled="True" TargetControlID="txt_pswd">
+                          </cc1:PasswordStrength>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*" ControlToValidate="txt_pswd" ForeColor="Red"></asp:RequiredFieldValidator>
 
                       </div>
                         <div class="col-md-6 form-group">
                         <asp:Label ID="lbl_confpswd" runat="server" Text=" Confirm Password"></asp:Label>
-                        <asp:TextBox ID="txt_confpswd" runat="server" type="text" class="form-control"></asp:TextBox>
+                        <asp:TextBox ID="txt_confpswd" runat="server" type="password" class="form-control"></asp:TextBox>
+                            <cc1:PasswordStrength ID="txt_confpswd_PasswordStrength" runat="server" Enabled="True" TargetControlID="txt_confpswd">
+                            </cc1:PasswordStrength>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="*" ControlToValidate="txt_confpswd" ForeColor="Red"></asp:RequiredFieldValidator>
                         <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txt_pswd" ControlToValidate="txt_confpswd" ErrorMessage="CompareValidator" ForeColor="Red"></asp:CompareValidator>
                       </div>
@@ -112,7 +116,8 @@
                   <div class="row">
                     <div class="col-md-6 form-group">
                         <asp:Label ID="lbl_date" runat="server" Text="Date"></asp:Label>
-                        <asp:TextBox ID="txt_date" runat="server" type="text" class="form-control" TextMode="Date" ></asp:TextBox>
+                        <asp:TextBox ID="txt_date" runat="server" type="text" class="form-control" TextMode="Date" > </asp:TextBox>
+                        
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="*" ControlToValidate="txt_date"  ForeColor="Red"></asp:RequiredFieldValidator>
 
                     </div>
@@ -127,6 +132,8 @@
                   <div class="row">
                     <div class="col-md-12 form-group">
                         <asp:Label ID="lbl_msg" runat="server" Text="Message"></asp:Label>
+                        <asp:ScriptManager ID="ScriptManager1" runat="server">
+                        </asp:ScriptManager>
                         <asp:TextBox ID="txt_msg" runat="server" class="form-control" TextMode="MultiLine" ></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ErrorMessage="*" ControlToValidate="txt_msg"  ForeColor="Red"></asp:RequiredFieldValidator>
 
