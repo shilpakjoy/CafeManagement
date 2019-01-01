@@ -53,7 +53,15 @@
                    </table>
                   
                </p>
-              
+               <p class="mb-3"> <h1>Contact Us:</h1>
+                   <br /> Mob:8281985538
+                   <br />Web: www.yummycafecalicut.com
+                   <br />Mail:yummycafecalicut@gmail.com
+                   
+                                    <br />
+                   
+                  
+               </p>
             </div>
 <%--          
             </div>--%>

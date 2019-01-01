@@ -40,7 +40,7 @@
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body style="background:url(img/welcome.jpg) " >
     <section id="container" class="">
 
 
@@ -304,25 +304,30 @@
         <!-- sidebar menu start-->
         <ul class="sidebar-menu">
           <li class="active">
-            <a class="" href="index.aspx">
+            <a class="" href="Index.aspx">
                           <i class="icon_house_alt"></i>
                           <span>Home</span>
                       </a>
           </li>
-          <li class="sub-menu">
+            <li class="active">
+            <a class="" href="status.aspx">
+                          <i class="icon_house_alt"></i>
+                          <span>Table booking Status</span>
+                      </a>
+          </li>
+         <%-- <li class="sub-menu">
             <a href="javascript:;" class="">
                           <i class="icon_document_alt"></i>
-                          <span>Menu</span>
+                          <span>Status</span>
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
             <ul class="sub">
               <li><a class="" href="Add_Menu.aspx">Add Item</a></li>
                 <ul class="sub-menu"><a class="" href="View_coffee.aspx">View Coffee</a></ul>
-<%--              <li><a class="" href="ViewMenu.aspx">View</a></li>--%>
                 <ul class="sub-menu"><a class="" href="View_pastry.aspx">View Pastry</a></ul>
 
             </ul>
-          </li>
+          </li>--%>
           <li class="sub-menu">
             <a href="javascript:;" class="">
                           <i class="icon_desktop"></i>

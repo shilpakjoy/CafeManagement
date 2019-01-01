@@ -18,7 +18,29 @@ public partial class System_Operator_Add_cakes : System.Web.UI.Page
     {
 
     }
-   
+    protected int get_id()
+    {
+        int id = 99;
+        int a = 0;
+        Class1 obj = new Class1();
+        obj.getconnect();
+        SqlCommand cmd = new SqlCommand("spcake", obj.con);
+        cmd.CommandType = CommandType.StoredProcedure;
+        cmd.Parameters.Add("@flag", 1);
+        DataTable dt = new DataTable();
+        SqlDataAdapter adt = new SqlDataAdapter(cmd);
+        adt.Fill(dt);
+        for (int i = 0; i < dt.Rows.Count; i++)
+        {
+            a = Int32.Parse(dt.Rows[i][0].ToString());
+            if (a > id)
+            {
+                id = a;
+            }
+        }
+        id = id + 1;
+        return id;
+    }
     protected void btn_add_Click(object sender, EventArgs e)
     {
 
@@ -28,6 +50,8 @@ public partial class System_Operator_Add_cakes : System.Web.UI.Page
         SqlCommand cmd = new SqlCommand("spcake", obj.con);
         cmd.CommandType = CommandType.StoredProcedure;
         cmd.Parameters.Add("@flag", 0);
+        cmd.Parameters.Add("@cake_id", get_id());
+
         cmd.Parameters.Add("@category", drpcategory.SelectedItem.Text);
         cmd.Parameters.Add("@name", txtname.Text);
         cmd.Parameters.Add("@image", ViewState["filepath"].ToString());
@@ -38,6 +62,8 @@ public partial class System_Operator_Add_cakes : System.Web.UI.Page
         obj.closeconnect();
        
         Response.Write("<script>alert('Inserted Successfully')</script>");
+        clear();
+
     }
     protected void btn_upload_Click(object sender, EventArgs e)
     {
@@ -62,5 +88,13 @@ public partial class System_Operator_Add_cakes : System.Web.UI.Page
         {
             Response.Write("<script>alert('Please choose an image')</script>");
         }
+    }
+    protected void clear()
+    {
+        drpcategory.SelectedItem.Text = "";
+        txtname.Text = "";
+        txtdetail.Text = "";
+        txtprice.Text = "";
+
     }
 }

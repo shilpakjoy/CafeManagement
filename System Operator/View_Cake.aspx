@@ -38,7 +38,7 @@
            
                                 <Columns>
 
-                                    <asp:CommandField ShowEditButton="True" />
+                                    <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" />
                                 <asp:TemplateField HeaderText="Image">
                                 <ItemTemplate>
                                 <asp:Image ID="imgg" runat="server" ImageUrl='<%# Eval("Image") %>' Height="40px" Width="40px" />

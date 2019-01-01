@@ -19,31 +19,6 @@
 						<div class="col-md-6 contact_left_grid" data-aos="fade-right">
                             
                            
-                            <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" RepeatColumns="3" Visible="False">
-                                <ItemTemplate>
-                                    name:
-                                    <asp:Label ID="nameLabel" runat="server" Text='<%# Eval("name") %>' />
-                                    <br />
-                                   
-                                    image:
-                                    <asp:Label ID="imageLabel" runat="server" Text='<%# Eval("image") %>' />
-                                    <br />
-                                    description:
-                                    <asp:Label ID="descriptionLabel" runat="server" Text='<%# Eval("description") %>' />
-                                    <br />
-                                    price:
-                                    <asp:Label ID="priceLabel" runat="server" Text='<%# Eval("price") %>' />
-<br />
-                                    <br />
-                                </ItemTemplate>
-                            </asp:DataList>
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CafeConnectionString %>" SelectCommand="SELECT [name], [image], [description], [price] FROM [cake] WHERE ([category] = @category)">
-                                <SelectParameters>
-                                    <asp:Parameter DefaultValue="BLACK FOREST" Name="category" Type="String" />
-                                </SelectParameters>
-                            </asp:SqlDataSource>
-                            
-                           
                         </div>
                </div>  
 			</div>

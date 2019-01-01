@@ -51,11 +51,7 @@
                                 <asp:ListItem>VANILA</asp:ListItem>
                                 <asp:ListItem>CHOCOLATE</asp:ListItem>
                                 <asp:ListItem>STRAWBERRY</asp:ListItem>
-                                <asp:ListItem>BLACK FOREST</asp:ListItem>
-                                <asp:ListItem>WHITE FOREST</asp:ListItem>
-                                <asp:ListItem>RED VELVET</asp:ListItem>
-                                <asp:ListItem>PINEAPPLE</asp:ListItem>
-                                <asp:ListItem>SPECIAL</asp:ListItem>
+                               
                             </asp:DropDownList>
                         </td>
                     </tr>
