@@ -49,17 +49,44 @@ public partial class System_Operator_Add_Category : System.Web.UI.Page
     {
         Class1 obj = new Class1();
         obj.getconnect();
+        String filename = Path.Combine(Server.MapPath("~/Images/category/"), FileUpload1.FileName);
+
         SqlCommand cmd1 = new SqlCommand("spcategory", obj.con);
         cmd1.CommandType = CommandType.StoredProcedure;
         cmd1.Parameters.Add("@flag", 0);
         cmd1.Parameters.Add("@c_id", get_id());
         cmd1.Parameters.Add("@category", txtname.Text);
+        cmd1.Parameters.Add("@image", ViewState["filepath"].ToString());
 
         cmd1.ExecuteNonQuery();
         obj.closeconnect();
      
         Response.Write("<script>alert('Inserted Successfully')</script>");
         clear();
+    }
+    protected void btn_upload_Click(object sender, EventArgs e)
+    {
+        if (FileUpload1.HasFile)
+        {
+
+            String filename = Path.Combine(Server.MapPath("~/Images/category/"), FileUpload1.FileName);
+            String strExtension = Path.GetExtension(FileUpload1.FileName);
+            if (strExtension == ".jpg" || strExtension == ".tmp" || strExtension == ".gif")
+            {
+
+                FileUpload1.SaveAs(filename);
+                Image1.ImageUrl = "~/Images/category/" + FileUpload1.FileName;
+                ViewState["filepath"] = Image1.ImageUrl;
+            }
+            else
+            {
+                Response.Write("<script>alert('Select a valid image')</script>");
+            }
+        }
+        else
+        {
+            Response.Write("<script>alert('Please choose an image')</script>");
+        }
     }
     protected void clear()
     {

@@ -116,7 +116,7 @@
                      </li>
                  
                   <li class="nav-item">
-                     <a href="shop.aspx" class="nav-link">Shop Cakes</a>
+                     <a href="shopping.aspx" class="nav-link">Shop Cakes</a>
                   </li>
                    <li class="nav-item">
                         <a href="Table_Reservation.aspx" class="nav-link">Table Reservation</a>

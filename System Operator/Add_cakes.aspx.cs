@@ -41,6 +41,10 @@ public partial class System_Operator_Add_cakes : System.Web.UI.Page
         id = id + 1;
         return id;
     }
+    protected void drpcategory_Click(object sender, EventArgs e)
+    { 
+
+    }
     protected void btn_add_Click(object sender, EventArgs e)
     {
 
@@ -52,7 +56,7 @@ public partial class System_Operator_Add_cakes : System.Web.UI.Page
         cmd.Parameters.Add("@flag", 0);
         cmd.Parameters.Add("@cake_id", get_id());
 
-        cmd.Parameters.Add("@category", drpcategory.SelectedItem.Text);
+        cmd.Parameters.Add("@c_id", drpcategory.SelectedValue.ToString());
         cmd.Parameters.Add("@name", txtname.Text);
         cmd.Parameters.Add("@image", ViewState["filepath"].ToString());
         cmd.Parameters.Add("@description", txtdetail.Text);

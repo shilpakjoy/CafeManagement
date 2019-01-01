@@ -24,6 +24,14 @@
     </tr>
     <tr>
         <td class="style17">
+            Image</td>
+        <td><asp:FileUpload ID="FileUpload1" runat="server" />
+                    <asp:Image ID="Image1" runat="server"/>        
+                    <asp:Button ID="btn_upload" runat="server" Text="UPLOAD" class="btn btn-primary" OnClick="btn_upload_Click"/>&nbsp;
+                        </td>
+    </tr>
+    <tr>
+        <td class="style17">
             </td>
         <td style="text-align: left" class="style17">
             <asp:Button ID="btnadd" runat="server" BorderColor="#FFFF99" CssClass="btn" 

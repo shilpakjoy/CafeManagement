@@ -29,61 +29,57 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-                </td>
+                    Name</td>
                 <td>
                     <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
-                </td>
+                    Email</td>
                 <td>
                     <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
-                </td>
+                    Password</td>
                 <td>
                     <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style2">
-                    <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
-                </td>
+                    Mob No:</td>
                 <td class="auto-style2">
                     <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
-                </td>
+                    House Name</td>
                 <td>
                     <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
-                </td>
+                    City</td>
                 <td>
                     <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style2">
-                    <asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style2"></td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Button ID="btn_register" runat="server" Text="REGISTER" OnClick="btn_register_Click" />
+                    <asp:Button ID="btn_cancel" runat="server" Text="CANCEL" OnClick="btn_cancel_Click" />
+                </td>
             </tr>
         </table>
 

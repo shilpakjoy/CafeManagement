@@ -312,7 +312,28 @@
          <div class="container py-lg-5 py-md-5 py-sm-4 py-4">
             <h3 class="title text-center mb-lg-5 mb-md-4  mb-sm-4 mb-3">Best Cakes</h3>
             <div class="row banner-below-w3l">
-               <div class="col-lg-4 col-md-6 col-sm-6 text-center banner-agile-flowers">
+                 <form runat="server">
+                <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" RepeatColumns="3">
+                                <ItemTemplate>
+                                    name:
+                                    <asp:Label ID="nameLabel" runat="server" Text='<%# Eval("name") %>' />
+                                    <br />
+                                    image:
+                                    <asp:Label ID="imageLabel" runat="server" Text='<%# Eval("image") %>' />
+                                    <br />                                    
+                                    price:
+                                    <asp:Label ID="priceLabel" runat="server" Text='<%# Eval("price") %>' />
+                                    <br />
+                                    <asp:Image ID="Image1" runat="server" ImageUrl='<%# Eval("image") %>' />
+                                    <asp:Button ID="Button3" runat="server" OnClick="Button3_Click1" Text="order" />
+                                    <br />
+                                </ItemTemplate>
+                            </asp:DataList>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CafeConnectionString %>" SelectCommand="SELECT [name], [image], [price] FROM [cake]"></asp:SqlDataSource>
+                           
+
+
+               <%--<div class="col-lg-4 col-md-6 col-sm-6 text-center banner-agile-flowers">
                   <img src="images/AlmondChocolate800.jpg" class="img-thumbnail" alt="">
                   <div class="banner-right-icon">
                      <h4 class="pt-3">AlmondChocolate</h4>
@@ -383,7 +404,7 @@
                   <div class="banner-right-icon">
                      <h4 class="pt-3">Cheese Cake</h4>
                   </div>
-               </div>
+               </div>--%>
                <%--<div class="toys-grids-upper">
                   <div class="about-toys-off">
                      <h2>Get Up to <span>70% Off </span>On Selected Toys</h2>
@@ -456,10 +477,7 @@
       <!--//subscribe-address-->
       <section class="sub-below-address py-lg-4 py-md-3 py-sm-3 py-3">
          <div class="container py-lg-5 py-md-5 py-sm-4 py-3">
-            <h3 class="title clr text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Get In Touch Us</h3>
-            <div class="icons mt-4 text-center">
-               <ul>
-                  <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+            <h3 class="title clr text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Get In Touch Us"><span class="fab fa-facebook-f"></span></a></li>
                   <li><a href="#"><span class="fas fa-envelope"></span></a></li>
                   <li><a href="#"><span class="fas fa-rss"></span></a></li>
                   <li><a href="#"><span class="fab fa-vk"></span></a></li>
@@ -505,7 +523,9 @@
                </div>
                <div class="modal-body">
                   <div class="register-form">
-                      <form runat="server">
+                     
+
+
 <%--                          <asp:TextBox ID="txt_fname" runat="server" placeholder="Your Name" name="Your Name" required=""></asp:TextBox>--%>
                           <asp:TextBox ID="txt_email" runat="server" placeholder="Your Email" name="Your Email" required=""></asp:TextBox>
                           <asp:TextBox ID="txt_pswd" runat="server" placeholder="password" name="password" required=""></asp:TextBox>

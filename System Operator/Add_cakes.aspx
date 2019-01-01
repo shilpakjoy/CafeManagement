@@ -22,6 +22,21 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <form runat="server">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br /><br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
      <table class="tbl">
         <tr>
             <td class="tblhead">
@@ -46,13 +61,11 @@
                         </td>
                         <td>
                             <asp:DropDownList ID="drpcategory" runat="server" CssClass="txt" 
-                                ForeColor="#006600">
-                                <asp:ListItem>SELECT CAKE</asp:ListItem>
-                                <asp:ListItem>VANILA</asp:ListItem>
-                                <asp:ListItem>CHOCOLATE</asp:ListItem>
-                                <asp:ListItem>STRAWBERRY</asp:ListItem>
+                                ForeColor="#006600" DataSourceID="SqlDataSource1" DataTextField="category" DataValueField="c_id">
+                                
                                
                             </asp:DropDownList>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CafeConnectionString %>" SelectCommand="SELECT [category], [c_id] FROM [category]"></asp:SqlDataSource>
                         </td>
                     </tr>
                     <tr>
