@@ -43,7 +43,7 @@ public partial class Guest_UserMaster : System.Web.UI.MasterPage
             }
             else
             {
-                Response.Redirect("");
+                Response.Redirect("../User/Index.aspx");
             }
 
 

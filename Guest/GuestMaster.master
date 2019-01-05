@@ -129,13 +129,13 @@
                      </li>
                     
                      <li class="nav-item">
-                        <a href="shop.aspx" class="nav-link">Shop Cakes</a>
+                        <a href="shopping.aspx" class="nav-link">Shop Cakes</a>
                      </li>
                       <li class="nav-item">
                         <a href="Table_Reservation.aspx" class="nav-link">Table Reservation</a>
                      </li>
                     
-                     <li class="nav-item dropdown">
+                     <%--<li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Cakes
                         </a>
@@ -147,7 +147,7 @@
                      </li>
                      <li class="nav-item">
                         <a href="contact.html" class="nav-link">Contact</a>
-                     </li>
+                     </li>--%>
                   </ul>
                </div>
             </nav>
@@ -312,7 +312,14 @@
          <div class="container py-lg-5 py-md-5 py-sm-4 py-4">
             <h3 class="title text-center mb-lg-5 mb-md-4  mb-sm-4 mb-3">Best Cakes</h3>
             <div class="row banner-below-w3l">
-                 <form runat="server">
+
+
+
+
+
+
+<%--
+
                 <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" RepeatColumns="3">
                                 <ItemTemplate>
                                     name:
@@ -330,10 +337,10 @@
                                 </ItemTemplate>
                             </asp:DataList>
                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CafeConnectionString %>" SelectCommand="SELECT [name], [image], [price] FROM [cake]"></asp:SqlDataSource>
-                           
+                           --%>
 
 
-               <%--<div class="col-lg-4 col-md-6 col-sm-6 text-center banner-agile-flowers">
+               <div class="col-lg-4 col-md-6 col-sm-6 text-center banner-agile-flowers">
                   <img src="images/AlmondChocolate800.jpg" class="img-thumbnail" alt="">
                   <div class="banner-right-icon">
                      <h4 class="pt-3">AlmondChocolate</h4>
@@ -404,7 +411,7 @@
                   <div class="banner-right-icon">
                      <h4 class="pt-3">Cheese Cake</h4>
                   </div>
-               </div>--%>
+               </div>
                <%--<div class="toys-grids-upper">
                   <div class="about-toys-off">
                      <h2>Get Up to <span>70% Off </span>On Selected Toys</h2>
@@ -417,67 +424,15 @@
       
       <!-- Product-view -->
 
-      <%--<section class="product py-lg-4 py-md-3 py-sm-3 py-3">
-         <div class="container py-lg-5 py-md-5 py-sm-4 py-3">
-            <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Coffee Menu</h3>
-            <div class=" img-toy-w3l-top">
-            </div>
-
-             <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1">
-                 <ItemTemplate>
-                     name:
-                     <asp:Label ID="nameLabel" runat="server" Text='<%# Eval("name") %>' />
-                     <br />
-                     image:
-                     <asp:Label ID="imageLabel" runat="server" Text='<%# Eval("image") %>' />
-                     <br />
-                     price:
-                     <asp:Label ID="priceLabel" runat="server" Text='<%# Eval("price") %>' />
-                     <br />
-                     <asp:Image ID="Image1" runat="server" ImageUrl='<%# Eval("image") %>' />
-<br />
-                 </ItemTemplate>
-             </asp:DataList>
-             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CafeConnectionString %>" SelectCommand="SELECT [name], [image], [price] FROM [menu] WHERE ([type] = @type)">
-                 <SelectParameters>
-                     <asp:CookieParameter CookieName="coffee" Name="type" Type="String" />
-                 </SelectParameters>
-             </asp:SqlDataSource>
-           
-         </div>
-      </section>--%>
-
-      <!--subscribe-address-->
-      <%--<section class="subscribe">
-         <div class="container-fluid">
-         <div class="row">
-            <div class="col-lg-6 col-md-6 map-info-right px-0">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3150859.767904157!2d-96.62081048651531!3d39.536794757966845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1408111832978"> </iframe>
-            </div>
-            <div class="col-lg-6 col-md-6 address-w3l-right text-center">
-               <div class="address-gried ">
-                  <span class="far fa-map"></span>
-                  <p>25478 Road St.121<br>USA New Hill
-                  <p>
-               </div>
-               <div class="address-gried mt-3">
-                  <span class="fas fa-phone-volume"></span>
-                  <p> +(000)123 4565<br>+(010)123 4565</p>
-               </div>
-               <div class=" address-gried mt-3">
-                  <span class="far fa-envelope"></span>
-                  <p><a href="mailto:info@example.com">info@example1.com</a>
-                     <br><a href="mailto:info@example.com">info@example2.com</a>
-                  </p>
-               </div>
-            </div>
-         </div>
-		 </div>
-      </section>--%>
+ 
+     
       <!--//subscribe-address-->
       <section class="sub-below-address py-lg-4 py-md-3 py-sm-3 py-3">
          <div class="container py-lg-5 py-md-5 py-sm-4 py-3">
-            <h3 class="title clr text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Get In Touch Us"><span class="fab fa-facebook-f"></span></a></li>
+            <h3 class="title clr text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Get In Touch Us</h3>
+            <div class="icons mt-4 text-center">
+               <ul>
+                  <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
                   <li><a href="#"><span class="fas fa-envelope"></span></a></li>
                   <li><a href="#"><span class="fas fa-rss"></span></a></li>
                   <li><a href="#"><span class="fab fa-vk"></span></a></li>
@@ -524,6 +479,7 @@
                <div class="modal-body">
                   <div class="register-form">
                      
+                                       <form runat="server">
 
 
 <%--                          <asp:TextBox ID="txt_fname" runat="server" placeholder="Your Name" name="Your Name" required=""></asp:TextBox>--%>
@@ -540,11 +496,19 @@
          </div>
       </div>
 
+
+
+
+
+
+
       <!--js working-->
       <script src='js/jquery-2.2.3.min.js'></script>
       <!--//js working-->
       <!-- cart-js -->
       <script src="js/cart.js"></script>
+     <script src="js/minicart.js"></script>
+
       <script>
           toys.render();
 

@@ -34,51 +34,36 @@
                         <td class="style3">
                             &nbsp;</td>
                         <td>
-                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="cake_id" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None">
-           
+                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="cake_id" DataSourceID="SqlDataSource1">
                                 <Columns>
-
-                                    <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" />
-                                <asp:TemplateField HeaderText="Image">
-                                <ItemTemplate>
-                                <asp:Image ID="imgg" runat="server" ImageUrl='<%# Eval("Image") %>' Height="40px" Width="40px" />
-                                </ItemTemplate>
-                                </asp:TemplateField>
-
-                                    <asp:BoundField DataField="cake_id" HeaderText="cake_id" 
-                                        SortExpression="cake_id" InsertVisible="False" ReadOnly="True" />
-                                    <asp:BoundField DataField="category" HeaderText="category" SortExpression="category" />
-                                    <asp:BoundField DataField="name" HeaderText="name" 
-                                        SortExpression="name" >
-                                    </asp:BoundField>
-                                    <asp:BoundField DataField="image" HeaderText="image" 
-                                        SortExpression="image" />
+                                    <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+                                    <asp:BoundField DataField="cake_id" HeaderText="cake_id" ReadOnly="True" SortExpression="cake_id" />
+                                    <asp:BoundField DataField="c_id" HeaderText="c_id" SortExpression="c_id" />
+                                    <asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
+                                    <asp:BoundField DataField="image" HeaderText="image" SortExpression="image" />
                                     <asp:BoundField DataField="description" HeaderText="description" SortExpression="description" />
                                     <asp:BoundField DataField="price" HeaderText="price" SortExpression="price" />
+                                    <asp:TemplateField>
+                    <ItemTemplate>
+                        <asp:Image ID="Image2" runat="server" ImageUrl='<%# Eval("image") %>' />
+                    </ItemTemplate>
+                </asp:TemplateField>
                                 </Columns>
-                                <FooterStyle BackColor="Tan" />
-                                <HeaderStyle BackColor="Tan" Font-Bold="True" />
-                                <PagerStyle BackColor="PaleGoldenrod" ForeColor="DarkSlateBlue" 
-                                    HorizontalAlign="Center" />
-                                <SelectedRowStyle BackColor="DarkSlateBlue" ForeColor="GhostWhite" />
-                                <SortedAscendingCellStyle BackColor="#FAFAE7" />
-                                <SortedAscendingHeaderStyle BackColor="#DAC09E" />
-                                <SortedDescendingCellStyle BackColor="#E1DB9C" />
-                                <SortedDescendingHeaderStyle BackColor="#C2A47B" />
-                            </asp:GridView>
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CafeConnectionString %>" DeleteCommand="DELETE FROM [cake] WHERE [cake_id] = @cake_id" InsertCommand="INSERT INTO [cake] ([category], [name], [image], [description], [price]) VALUES (@category, @name, @image, @description, @price)" SelectCommand="SELECT * FROM [cake]" UpdateCommand="UPDATE [cake] SET [category] = @category, [name] = @name, [image] = @image, [description] = @description, [price] = @price WHERE [cake_id] = @cake_id">
+                            </asp:GridView> 
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CafeConnectionString %>" DeleteCommand="DELETE FROM [cake] WHERE [cake_id] = @cake_id" InsertCommand="INSERT INTO [cake] ([cake_id], [c_id], [name], [image], [description], [price]) VALUES (@cake_id, @c_id, @name, @image, @description, @price)" SelectCommand="SELECT * FROM [cake]" UpdateCommand="UPDATE [cake] SET [c_id] = @c_id, [name] = @name, [image] = @image, [description] = @description, [price] = @price WHERE [cake_id] = @cake_id">
                                 <DeleteParameters>
                                     <asp:Parameter Name="cake_id" Type="Int32" />
                                 </DeleteParameters>
                                 <InsertParameters>
-                                    <asp:Parameter Name="category" Type="String" />
+                                    <asp:Parameter Name="cake_id" Type="Int32" />
+                                    <asp:Parameter Name="c_id" Type="Int32" />
                                     <asp:Parameter Name="name" Type="String" />
                                     <asp:Parameter Name="image" Type="String" />
                                     <asp:Parameter Name="description" Type="String" />
                                     <asp:Parameter Name="price" Type="Double" />
                                 </InsertParameters>
                                 <UpdateParameters>
-                                    <asp:Parameter Name="category" Type="String" />
+                                    <asp:Parameter Name="c_id" Type="Int32" />
                                     <asp:Parameter Name="name" Type="String" />
                                     <asp:Parameter Name="image" Type="String" />
                                     <asp:Parameter Name="description" Type="String" />

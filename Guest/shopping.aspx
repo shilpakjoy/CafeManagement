@@ -53,7 +53,7 @@
                                         </tr>
                                         <tr>
                                             
-                                            <td><a href='View_categ_cakes.aspx?id=<%# Eval("c_id") %>' class="auto-style2"><b>View More</b></a>&nbsp;</td>
+                                            <td><a href='View_categ_cake.aspx?id=<%# Eval("c_id") %>' class="auto-style2"><b>View More</b></a>&nbsp;</td>
                                        <td>&nbsp;</td>
                                              </tr>
                                     </table>

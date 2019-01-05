@@ -20,4 +20,9 @@ public partial class Guest_User_Registration : System.Web.UI.Page
     {
 
     }
+    protected void Button2_Click1(object sender, EventArgs e)
+    {
+        Response.Redirect("login.aspx");
+
+    }
 }
