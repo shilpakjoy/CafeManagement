@@ -21,4 +21,7 @@ public partial class Guest_checkouts : System.Web.UI.Page
         Response.Redirect("shopping.aspx");
 
     }
+    protected void txt_id_TextChanged(object sender, EventArgs e)
+    {
+    }
 }

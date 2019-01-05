@@ -18,6 +18,6 @@ public partial class Guest_View_categ_cakes : System.Web.UI.Page
     }
     protected void btn_cart_Click(object sender, EventArgs e)
     {
-        Response.Redirect("User_Registration.aspx");
+        Response.Redirect("checkouts.aspx");
     }
 }
