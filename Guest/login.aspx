@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="User_Registration.aspx.cs" Inherits="Guest_User_Registration" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="login.aspx.cs" Inherits="Guest_login" %>
 
 <!DOCTYPE html>
 
@@ -49,7 +49,7 @@
               </div>
               <div class="col-lg-12 p-5">
     <form id="form1" runat="server">
-    <h1 class="mb-4">Register now</h1> <asp:Button ID="Button2" runat="server" Text="Back" OnClick="Button2_Click1" /> 
+    <h1 class="mb-4">Login</h1> <asp:Button ID="Button2" runat="server" Text="Back" OnClick="Button2_Click"  /> 
 
     <div>
 
@@ -62,48 +62,21 @@
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
-            <tr>
-                <td>
-                    Name</td>
-                <td>
-                    <asp:TextBox ID="txt_name" runat="server" class="form-control"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
+           <tr>
                 <td>
                     Email</td>
                 <td>
-                    <asp:TextBox ID="txt_email" runat="server" class="form-control"></asp:TextBox>
+                    <asp:TextBox ID="TextBox2" runat="server" class="form-control"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>
                     Password</td>
                 <td>
-                    <asp:TextBox ID="txt_password" runat="server" class="form-control"></asp:TextBox>
+                    <asp:TextBox ID="TextBox3" runat="server" class="form-control"></asp:TextBox>
                 </td>
             </tr>
-            <tr>
-                <td class="auto-style2">
-                    Mob No:</td>
-                <td class="auto-style2">
-                    <asp:TextBox ID="txt_mob" runat="server" class="form-control"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    House Name</td>
-                <td>
-                    <asp:TextBox ID="txt_housename" runat="server" class="form-control"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    City</td>
-                <td>
-                    <asp:TextBox ID="txt_city" runat="server" class="form-control"></asp:TextBox>
-                </td>
-            </tr>
+          
             <tr>
                 <td class="auto-style2">
                     &nbsp;</td>
@@ -112,7 +85,9 @@
             <tr>
                 <td>&nbsp;</td>
                 <td>
-                    <asp:Button ID="btn_register" runat="server" Text="REGISTER" class="btn btn-primary btn-lg btn-block" OnClick="btn_register_Click" />
+                    <asp:Button ID="btn_login" runat="server" Text="LOGIN" class="btn btn-primary btn-lg btn-block" OnClick="btn_login_Click"  />
+                    New User?<asp:Button ID="Button3" runat="server" Text="Sign Up" class="btn btn-primary btn-lg btn-block" OnClick="Button3_Click"/><br />                    
+
                     <asp:Button ID="Button1" runat="server" Text="Close" class="btn btn-secondary" data-dismiss="modal"/>
                 </td>
             </tr>

@@ -52,19 +52,14 @@
                                             <td class="auto-style1"></td>
                                         </tr>
 
-                                        <tr>
-                                            <td>
-     <a href='login.aspx?id=<%# Eval("c_id") %>' class="auto-style2"><b>View More</b></a>&nbsp;
-
-                                            </td>
-                                        </tr>
+                                        
 
 
-                                       <%-- <tr>
+                                       <tr>
                                             
                                             <td><a href='View_categ_cake.aspx?id=<%# Eval("c_id") %>' class="auto-style2"><b>View More</b></a>&nbsp;</td>
                                        <td>&nbsp;</td>
-                                             </tr>--%>
+                                             </tr>
                                     </table>
                                 </ItemTemplate>
                             </asp:DataList>
