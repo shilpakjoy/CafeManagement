@@ -5,10 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Users_index : System.Web.UI.MasterPage
+public partial class Admin_tbl_rsrv_approvedUsers : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (Session["email"].ToString() == "")
+        {
+            Response.Redirect("../Guest/index.aspx");
+        }
     }
 }

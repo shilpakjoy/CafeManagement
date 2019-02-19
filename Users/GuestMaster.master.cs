@@ -36,21 +36,10 @@ public partial class Guest_GuestMaster : System.Web.UI.MasterPage
         {
             Session["email"] = txt_email.Text;
             //if (dt.Rows[0][3].ToString() == "admin")
-            if (dt.Rows[0][3].ToString().CompareTo("admin") == 0)
-            {
-                Response.Redirect("../Admin/index.aspx");
-            }
-
-            else if (dt.Rows[0][3].ToString().CompareTo("systemoperator") == 0)
-            {
-                Response.Redirect("../System Operator/index.aspx");
-            }
-            else
+            if (dt.Rows[0][3].ToString()=="Guest")
             {
                 Response.Redirect("../User/Index.aspx");
             }
-
-
 
         }
     }

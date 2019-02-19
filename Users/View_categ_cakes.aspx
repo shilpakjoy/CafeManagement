@@ -11,7 +11,7 @@
         <br />
         <br />
         <br />
-        <asp:DataList ID="DataList1" runat="server" DataKeyField="cake_id" DataSourceID="SqlDataSource2">
+        <asp:DataList ID="DataList1" runat="server" DataKeyField="cake_id" DataSourceID="SqlDataSource2" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
             <ItemTemplate>
                 <%--&nbsp;cake_id:<asp:Label ID="cake_idLabel" runat="server" Text='<%# Eval("cake_id") %>' />
                 <br />
@@ -57,14 +57,24 @@
                         <td>&nbsp;</td>
                          <td>&nbsp;</td>
                     </tr>
+
                     <tr>
+                                <td>
+                                    <asp:Button ID="Button1" runat="server" CommandName="addtocart" OnClick="Button1_Click" Text="Add To Cart" Height="59px" Width="215px" />
+                                </td>
+                                <td>
+                                    <asp:Button ID="Button2" runat="server" CommandName="byenow" OnClick="Button2_Click" Text="Buy Now" Width="216px" Height="57px" />
+                                </td>
+                            </tr>
+
+                    <%--<tr>
                         <td>
                             <asp:Button ID="btn_cart" runat="server" Text="CART" CommandName="addtocart" OnClick="btn_cart_Click" />&nbsp;
                             <asp:Button ID="btn_buynow" runat="server" CommandName="buyname" OnClick="btn_buynow_Click" Text="BUY NOW" />
                         </td>
                         <td>
                             &nbsp;</td>
-                    </tr>
+                    </tr>--%>
                 </table>
 <br />
 

@@ -34,21 +34,44 @@
                         <td class="style3">
                             &nbsp;</td>
                         <td>
-                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="cake_id" DataSourceID="SqlDataSource1">
+                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="cake_id" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None">
+                                <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                                 <Columns>
                                     <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
-                                    <asp:BoundField DataField="cake_id" HeaderText="cake_id" ReadOnly="True" SortExpression="cake_id" />
-                                    <asp:BoundField DataField="c_id" HeaderText="c_id" SortExpression="c_id" />
-                                    <asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
-                                    <asp:BoundField DataField="image" HeaderText="image" SortExpression="image" />
-                                    <asp:BoundField DataField="description" HeaderText="description" SortExpression="description" />
-                                    <asp:BoundField DataField="price" HeaderText="price" SortExpression="price" />
+                                    <asp:BoundField DataField="cake_id" HeaderText="Cake_id" ReadOnly="True" SortExpression="cake_id" HeaderStyle-ForeColor="White">
+<HeaderStyle ForeColor="White"></HeaderStyle>
+                                    </asp:BoundField>
+                                    <asp:BoundField DataField="c_id" HeaderText="C_id" SortExpression="c_id" HeaderStyle-ForeColor="White">
+<HeaderStyle ForeColor="White"></HeaderStyle>
+                                    </asp:BoundField>
+                                    <asp:BoundField DataField="name" HeaderText="Name" SortExpression="name" HeaderStyle-ForeColor="White">
+<HeaderStyle ForeColor="White"></HeaderStyle>
+                                    </asp:BoundField>
+                                    <asp:BoundField DataField="image" HeaderText="Image" SortExpression="image" HeaderStyle-ForeColor="White">
+<HeaderStyle ForeColor="White"></HeaderStyle>
+                                    </asp:BoundField>
+                                    <asp:BoundField DataField="description" HeaderText="Description" SortExpression="description" HeaderStyle-ForeColor="White">
+<HeaderStyle ForeColor="White"></HeaderStyle>
+                                    </asp:BoundField>
+                                    <asp:BoundField DataField="price" HeaderText="Price" SortExpression="price" HeaderStyle-ForeColor="White">
+<HeaderStyle ForeColor="White"></HeaderStyle>
+                                    </asp:BoundField>
                                     <asp:TemplateField>
                     <ItemTemplate>
                         <asp:Image ID="Image2" runat="server" ImageUrl='<%# Eval("image") %>' />
                     </ItemTemplate>
                 </asp:TemplateField>
                                 </Columns>
+                                <EditRowStyle BackColor="#999999" />
+                                <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                                <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                                <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                                <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+                                <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                                <SortedAscendingCellStyle BackColor="#E9E7E2" />
+                                <SortedAscendingHeaderStyle BackColor="#506C8C" />
+                                <SortedDescendingCellStyle BackColor="#FFFDF8" />
+                                <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
                             </asp:GridView> 
                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CafeConnectionString %>" DeleteCommand="DELETE FROM [cake] WHERE [cake_id] = @cake_id" InsertCommand="INSERT INTO [cake] ([cake_id], [c_id], [name], [image], [description], [price]) VALUES (@cake_id, @c_id, @name, @image, @description, @price)" SelectCommand="SELECT * FROM [cake]" UpdateCommand="UPDATE [cake] SET [c_id] = @c_id, [name] = @name, [image] = @image, [description] = @description, [price] = @price WHERE [cake_id] = @cake_id">
                                 <DeleteParameters>

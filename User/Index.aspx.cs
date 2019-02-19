@@ -11,6 +11,7 @@ public partial class User_Index : System.Web.UI.Page
     {
         if (Session["email"].ToString() == "")
         {
+
             Response.Redirect("../Guest/index.aspx");
         }
     }

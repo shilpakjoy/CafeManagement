@@ -4,25 +4,30 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <form id="form1" runat="server">
-    <asp:DataList ID="DataList1" runat="server" BackColor="#FFFFCC" DataSourceID="SqlDataSource1" Width="268px">
+    <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" Width="268px" CellPadding="4" ForeColor="#333333">
+        <AlternatingItemStyle BackColor="White" ForeColor="#284775" />
+        <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+        <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+        <ItemStyle BackColor="#F7F6F3" ForeColor="#333333" />
         <ItemTemplate>
-            email:
+            EMAIL:  
             <asp:Label ID="emailLabel" runat="server" Text='<%# Eval("email") %>' />
             <br />
-            date:
+            DATE:  
             <asp:Label ID="dateLabel" runat="server" Text='<%# Eval("date") %>' />
             <br />
-            time:
+            TIME:  
             <asp:Label ID="timeLabel" runat="server" Text='<%# Eval("time") %>' />
             <br />
-            people:
+            PEOPLE:  
             <asp:Label ID="peopleLabel" runat="server" Text='<%# Eval("people") %>' />
 <br />
-            status:
+            STATUS:  
             <asp:Label ID="statusLabel" runat="server" Text='<%# Eval("status") %>' />
             <br />
             <br />
         </ItemTemplate>
+        <SelectedItemStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
     </asp:DataList>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CafeConnectionString %>" SelectCommand="SELECT [email], [date], [time], [people], [status] FROM [table_reservation] WHERE ([email] = @email)">
         <SelectParameters>

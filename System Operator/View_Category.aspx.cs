@@ -9,6 +9,9 @@ public partial class System_Operator_View_Category : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (Session["email"].ToString() == "")
+        {
+            Response.Redirect("../Guest/index.aspx");
+        }
     }
 }
