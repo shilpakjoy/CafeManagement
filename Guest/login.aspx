@@ -67,13 +67,16 @@
                     Email</td>
                 <td>
                     <asp:TextBox ID="TextBox2" runat="server" class="form-control"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox2" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox2" ErrorMessage="Enter correct email" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
                 <td>
                     Password</td>
                 <td>
-                    <asp:TextBox ID="TextBox3" runat="server" class="form-control"></asp:TextBox>
+                    <asp:TextBox ID="TextBox3" runat="server" class="form-control" TextMode="Password" ></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox3" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
           

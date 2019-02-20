@@ -80,7 +80,7 @@
                 <td>
                     Password</td>
                 <td>
-                    <asp:TextBox ID="txt_password" runat="server" class="form-control"></asp:TextBox>
+                    <asp:TextBox ID="txt_password" runat="server" class="form-control" TextMode="Password" ></asp:TextBox>
                 </td>
             </tr>
             <tr>
