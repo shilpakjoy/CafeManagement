@@ -40,7 +40,7 @@
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body style="background:url(img/welcome.jpg) " >
+<body>
     <section id="container" class="">
 
 
@@ -68,7 +68,7 @@
       <div class="top-nav notification-row">
         <!-- notificatoin dropdown start-->
         <ul class="nav pull-right top-menu">
-
+            
           <!-- task notificatoin start -->
           <li id="task_notificatoin_bar" class="dropdown">
            
@@ -157,7 +157,7 @@
           <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="profile-ava">
-                                <img alt="" src="img/avatar1_small.jpg">
+<%--                                <img alt="" src="img/avatar1_small.jpg">--%>
                             </span>
                             <span class="username">WELCOME USER</span>
                             <b class="caret"></b>
@@ -219,6 +219,7 @@
                </li>
                <li></li>
             </ul>
+             
          </div>
       </div>
 

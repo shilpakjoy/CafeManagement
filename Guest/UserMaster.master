@@ -206,7 +206,7 @@
                           <asp:TextBox ID="txt_email" runat="server" placeholder="Your Email" name="Your Email" required=""></asp:TextBox>
                           <asp:TextBox ID="txt_pswd" runat="server" placeholder="password" name="password" type="password" required=""></asp:TextBox>
                       <asp:Button ID="Button2" runat="server" Text="LOGIN" class="btn subscrib-btnn" OnClick="Button2_Click"  />
-                        New User?<a href="User_Registration.aspx" >Register Here</a><br />                    
+<%--                        New User?<a href="User_Registration.aspx" >Register Here</a><br />                    --%>
                         <div class="modal-footer">
                         <asp:Button ID="Button1" runat="server" Text="Close" class="btn btn-secondary" data-dismiss="modal"/>
 <%--                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>--%>
