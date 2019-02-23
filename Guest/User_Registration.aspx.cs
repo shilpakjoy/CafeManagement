@@ -37,9 +37,8 @@ public partial class Guest_User_Registration : System.Web.UI.Page
         cmd1.Parameters.Add("@email", txt_email.Text);
         cmd1.Parameters.Add("@password", txt_password.Text);
         cmd1.Parameters.Add("@phone", txt_mob.Text);
-        cmd1.Parameters.Add("@housename", txt_housename.Text);
-        cmd1.Parameters.Add("@city", txt_city.Text);
-        cmd1.Parameters.Add("@status", "waiting");
+        
+       // cmd1.Parameters.Add("@status", "waiting");
         
         cmd.ExecuteNonQuery();
 

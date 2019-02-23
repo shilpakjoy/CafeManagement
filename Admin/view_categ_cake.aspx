@@ -1,17 +1,15 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Guest/UserMaster.master" AutoEventWireup="true" CodeFile="View_categ_cakes.aspx.cs" Inherits="Guest_View_categ_cakes" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="view_categ_cake.aspx.cs" Inherits="Guest_view_catog_cake" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <asp:DataList ID="DataList1" runat="server" DataKeyField="cake_id" DataSourceID="SqlDataSource2">
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <asp:DataList ID="DataList1" runat="server" DataKeyField="cake_id" DataSourceID="SqlDataSource2" BorderColor="#999999" RepeatColumns="3">
             <ItemTemplate>
                 <%--&nbsp;cake_id:<asp:Label ID="cake_idLabel" runat="server" Text='<%# Eval("cake_id") %>' />
                 <br />
@@ -59,8 +57,10 @@
                     </tr>
                     <tr>
                         <td>
-                            <asp:Button ID="btn_cart" runat="server" Text="CART" CommandName="addtocart" OnClick="btn_cart_Click" />&nbsp;
-                            <asp:Button ID="btn_buynow" runat="server" CommandName="buyname" OnClick="btn_buynow_Click" Text="BUY NOW" />
+                            &nbsp;
+  <a href='purchase.aspx?id=<%# Eval("c_id") %>&amp;item=<%# Eval("cake_id") %>'>Book Noe?</a>
+
+                            <asp:Button ID="btn_buynow" runat="server" CommandName="buyname"  Text="BOOK NOW" OnClick="btn_buynow_Click" />
                         </td>
                         <td>
                             &nbsp;</td>
@@ -78,7 +78,7 @@
         <br />
         <br />
        
-    
-
-</asp:Content>
-
+    </div>
+    </form>
+</body>
+</html>

@@ -14,11 +14,7 @@ public partial class Guest_UserMaster : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        HttpContext.Current.Response.Cache.SetExpires(DateTime.UtcNow.AddDays(-1));
-        HttpContext.Current.Response.Cache.SetValidUntilExpires(false);
-        HttpContext.Current.Response.Cache.SetRevalidation(HttpCacheRevalidation.AllCaches);
-        HttpContext.Current.Response.Cache.SetCacheability(HttpCacheability.NoCache);
-        HttpContext.Current.Response.Cache.SetNoStore();
+        
     }
     protected void Button2_Click(object sender, EventArgs e)
     {

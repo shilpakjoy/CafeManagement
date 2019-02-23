@@ -58,7 +58,7 @@
                     <tr>
                         <td>
                             &nbsp;
-  <a href='checkouts.aspx?id=<%# Eval("c_id") %>&amp;item=<%# Eval("cake_id") %>'>Interested?</a>
+  <a href='purchases.aspx?id=<%# Eval("c_id") %>&amp;item=<%# Eval("cake_id") %>'>Interested?</a>
 
                             <asp:Button ID="btn_buynow" runat="server" CommandName="buyname"  Text="BOOK NOW" OnClick="btn_buynow_Click" />
                         </td>

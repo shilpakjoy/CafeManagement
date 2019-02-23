@@ -90,20 +90,8 @@
                     <asp:TextBox ID="txt_mob" runat="server" class="form-control"></asp:TextBox>
                 </td>
             </tr>
-            <tr>
-                <td>
-                    House Name</td>
-                <td>
-                    <asp:TextBox ID="txt_housename" runat="server" class="form-control"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    City</td>
-                <td>
-                    <asp:TextBox ID="txt_city" runat="server" class="form-control"></asp:TextBox>
-                </td>
-            </tr>
+           
+            
             <tr>
                 <td class="auto-style2">
                     &nbsp;</td>

@@ -9,7 +9,7 @@ public partial class Guest_shopping : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        
+
     }
    
     
