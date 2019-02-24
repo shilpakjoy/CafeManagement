@@ -59,13 +59,8 @@ public partial class Users_purchases : System.Web.UI.Page
         cmd1.Parameters.Add("@flag", 0);
         cmd1.Parameters.Add("@c_id", Convert.ToInt32(Request.QueryString["id"].ToString()));
         cmd1.Parameters.Add("@cake_id", Convert.ToInt32(Request.QueryString["item"].ToString()));
-        // cmd.Parameters.Add("@categoryid", Convert.ToInt32(Request.QueryString["catid"].ToString()));
-        // cmd.Parameters.Add("@foodid", Convert.ToInt32(Request.QueryString["fid"].ToString()));
-        //cmd1.Parameters.Add("@email", Session["email"].ToString());
-        //cmd.Parameters.Add("@email", txt_email.Text);
-
+        
         cmd1.Parameters.Add("@landmark", txt_landmark.Text);
-
         cmd1.Parameters.Add("@town", txt_town.Text);
         cmd1.Parameters.Add("@date", txt_date.Text);
         cmd1.Parameters.Add("@time", txt_time.Text);

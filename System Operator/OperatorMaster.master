@@ -250,7 +250,11 @@
             </ul>
           </li>
 
-         
+         <li class="sub-menu">
+            <a class="" href="view_feedback.aspx">
+                          <span>Feedback</span>
+                      </a>
+          </li>
 
         </ul>
         <!-- sidebar menu end-->

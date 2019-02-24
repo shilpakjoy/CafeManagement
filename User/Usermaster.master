@@ -198,7 +198,12 @@
                           <span>Table booking Status</span>
                       </a>
           </li>
-        
+        <li class="active">
+            <a class="" href="feedback.aspx">
+                          <i class="icon_house_alt"></i>
+                          <span>Feedback</span>
+                      </a>
+          </li>
 
         </ul>
         <!-- sidebar menu end-->

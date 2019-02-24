@@ -84,7 +84,7 @@
                            <li>
                               <button type="button" data-toggle="modal" data-target="#exampleModal"> <span class="far fa-user"></span></button>
                            </li>
-                           <li class="toyscart toyscart2 cart cart box_1">
+                           <%--<li class="toyscart toyscart2 cart cart box_1">
                               <form action="#" method="post" class="last">
                                  <input type="hidden" name="cmd" value="_cart">
                                  <input type="hidden" name="display" value="1">
@@ -92,7 +92,7 @@
                                  <span class="fas fa-cart-arrow-down"></span>
                                  </button>
                               </form>
-                           </li>
+                           </li>--%>
                            <%-- <li class="toyscart toyscart2 cart cart box_1">
                               <form action="#" method="post" class="last">
                                  <input type="hidden" name="display" value="1">
@@ -487,7 +487,9 @@
                           <asp:TextBox ID="txt_pswd" runat="server" placeholder="password" name="password" type="password" required=""></asp:TextBox>
                       <asp:Button ID="Button2" runat="server" Text="LOGIN" class="btn subscrib-btnn" OnClick="Button2_Click"  />
 <%--                        New User?<a href="User_Registration.aspx" >Register Here</a><br />                    --%>
-                        <div class="modal-footer">
+                                Forget password?<a href="forgetpassword.aspx">Click here</a>
+
+                                            <div class="modal-footer">
                         <asp:Button ID="Button1" runat="server" Text="Close" class="btn btn-secondary" data-dismiss="modal"/>
 <%--                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>--%>
                </div>
