@@ -52,7 +52,7 @@
       <a href="index.aspx" class="logo"> <span class="lite">System Operator</span></a>
       <!--logo end-->
 
-      <div class="nav search-row" id="top_menu">
+      <%--<div class="nav search-row" id="top_menu">
         <!--  search form start -->
         <ul class="nav top-menu">
           <li>
@@ -62,7 +62,7 @@
           </li>
         </ul>
         <!--  search form end -->
-      </div>
+      </div>--%>
 
       <div class="top-nav notification-row">
         <!-- notificatoin dropdown start-->
@@ -156,9 +156,7 @@
                         </a>
             <ul class="dropdown-menu extended logout">
               <div class="log-arrow-up"></div>
-              <li class="eborder-top">
-                <a href=""><i class="icon_profile"></i> My Profile</a>
-              </li>
+             
               
               <li>
                 <a href="../logout.aspx"><i class="icon_key_alt"></i> Log Out</a>

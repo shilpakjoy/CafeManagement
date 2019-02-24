@@ -20,9 +20,15 @@
                 </td>
             </tr>
        <tr><td> <asp:Label ID="Label1" runat="server" Text="Email"></asp:Label></td>
-        <td><asp:TextBox ID="txtemail" runat="server" ></asp:TextBox></td></tr>
+        <td><asp:TextBox ID="txtemail" runat="server" ></asp:TextBox>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtemail" ErrorMessage="Enter email format" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtemail" ErrorMessage="Enter email" ForeColor="Red"></asp:RequiredFieldValidator>
+           </td></tr>
         <tr><td> <asp:Label ID="Label2" runat="server" Text="Phone"></asp:Label></td>
-        <td><asp:TextBox ID="txtphn" runat="server" ></asp:TextBox></td></tr>
+        <td><asp:TextBox ID="txtphn" runat="server" ></asp:TextBox>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtphn" ErrorMessage="Enter correct number" ForeColor="Red" ValidationExpression="\d{10}"></asp:RegularExpressionValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtphn" ErrorMessage="Enter phone number" ForeColor="Red"></asp:RequiredFieldValidator>
+            </td></tr>
         <tr><td></td><td><asp:Button ID="Button1" runat="server" Text="SUBMIT" OnClick="Button1_Click" /></td></tr>
             </table>
     </div>
