@@ -35,14 +35,10 @@
                <p class="mb-3"> <h1>Services:</h1>
                    <br />
                    <table style="width: 100%;">
+                       
                        <tr>
                            <td>&nbsp;</td>
-                           <td>Delivery&nbsp;</td>
-                           <td>&nbsp;</td>
-                       </tr>
-                       <tr>
-                           <td>&nbsp;</td>
-                           <td>Online booking&nbsp;</td>
+                           <td>Booking&nbsp;</td>
                            <td>&nbsp;</td>
                        </tr>
                        <tr>
